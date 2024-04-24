@@ -7,75 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet me!</title>
     <link rel="stylesheet" href="https://nispar2009.github.io/spectrum_stylr/General/Spectrum.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js"></script>
-    <style>
-        .card {
-            width: 50%;
-            margin-left: 25%;
-            margin-right: 25%;
-            padding-bottom: 25px;
-        }
-    </style>
+    <script src="script.js"></script>
 </head>
 
-<body>
-    <h1 class="text-blue text-center">Nisanth Parupalli</h1>
-    <div class="section-dark">
-        Yup&mdash;that's me!
-        This is my official GitHub page.
-        I have a deep interest in coding.
-        This interest is what led me to create a series of web applications.
-        Wanna build a rich UI for your page?
-        Tired of Bootstrap or W3.CSS?
-        No worries, I've got you covered&mdash;meet SpectrumStylr!
-        A JS and CSS library designed to make a developer's life easier.
-        Our documentations have been designed to help you use SpectrumStylr.
-        All my work is designed using this.
-        I have also created a ton of other cool projects.
-        I've been selected for an all-India design championship so I created a web app showcasing my project.
-        Check this out below.
+<body onload="anim()">
+    <div id="intro">
+        <div id="top-line"></div>
+        <div id="bottom-line"></div>
+        <div id="line"></div>
     </div>
-    <div class="section-light">
-        <h2 class="text-blue">Updates</h2>
-        Meet spectrum-stylr-beta! All-new alternative to SpectrumStylr legacy&mdash;with sleeker fonts and brilliant
-        light and cool dark themes.
-        QuickCalc is a calculator that can help you solve expressions with "x" as a variable.
-        <span class="text-red">But be careful, x can only be a whole number</span>
-        QuickCalc 2.0 is a new version of QuickCalc with the same features&mdash;but this time without all those pesky
-        unavaoidable bugs that come from using forms and back-end.
-        Moreover, it is also available on GitHub pages. Check it out below!
-        Use TuneIn to compose tunes and beats easily&mdash;and save them in the form of simple text!
-        CodeMode is an all HTML site that allows you to create, save, and run HTML pages.
-        Upload upto 5MB of code and edit, save, and run it seamlessly on the go.
-        <span class="text-blue">However, CodeMode works best with CDN links for JS and CSS. You can also type JS and CSS
-            directly inside the HTML code using &lt;script&gt; and &lt;style&gt;,</span>
-        Our newest addition is What-a-Shot!
-        A timing based simulator for batting in cricket&mdash;it has many features including wickets, stats, and
-        different kinds of bats.
-    </div>
-    <br><br>
-    <div class="card">
-        <h2 class="text-center text-green">My projects</h2>
-        <marquee direction="left">
-            <button class="btn btn-green-outline"
-                onclick="redirect('https://nispar2009.github.io/What-a-Shot')">What-a-Shot!</button>
-            <button class="btn btn-blue-outline"
-                onclick="redirect('https://nispar2009.github.io/CodeMode')">CodeMode</button>
-            <button class="btn btn-yellow-outline"
-                onclick="redirect('https://nispar2009.github.io/CanaryChatbot')">Canary Chatbot</button>
-            <button class="btn btn-purple-outline" onclick="redirect('/spectrum_stylr')">SpectrumStylr</button>
-            <button class="btn btn-orange-outline" onclick="redirect('/DesignChamp')">Design Championship</button>
-            <button class="btn btn-green-outline" onclick="redirect('https://github.com/nispar2009/j-pp')">Passion
-                Project</button>
-            <button class="btn btn-blue-outline"
-                onclick="redirect('https://github.com/nispar2009/RockPaperScissors')">PVP rock-paper-scissors</button>
-            <button class="btn btn-grey-outline"
-                onclick="redirect('https://nispar2009.github.io/QuickCalc2.0')">QuickCalc2.0</button>
-            <button class="btn btn-green-outline"
-                onclick="redirect('https://nispar2009.github.io/TuneIn')">TuneIn</button>
-            <button class="btn btn-grey-outline" onclick="redirect('https://github.com/nispar2009')">More</button>
-        </marquee>
+    <div id="cnt">
+        <h1 class="text-blue text-center">Nisanth Parupalli</h1>
+        <div class="section-dark">
+            Yup&mdash;that's me!
+            This is my official GitHub page.
+            I have a deep interest in coding.
+            This interest is what led me to create a series of web applications.
+            Wanna build a rich UI for your page?
+            Tired of Bootstrap or W3.CSS?
+            No worries, I've got you covered&mdash;meet SpectrumStylr!
+            A JS and CSS library designed to make a developer's life easier.
+            Our documentations have been designed to help you use SpectrumStylr.
+            All my work is designed using this.
+            I have also created a ton of other cool projects.
+            I've been selected for an all-India design championship so I created a web app showcasing my project.
+            Check this out below.
+        </div>
+        <div class="section-light">
+            <h2 class="text-blue">Updates</h2>
+            Meet spectrum-stylr-beta! All-new alternative to SpectrumStylr legacy&mdash;with sleeker fonts and brilliant
+            light and cool dark themes.
+            QuickCalc is a calculator that can help you solve expressions with "x" as a variable.
+            <span class="text-red">But be careful, x can only be a whole number</span>
+            QuickCalc 2.0 is a new version of QuickCalc with the same features&mdash;but this time without all those
+            pesky
+            unavaoidable bugs that come from using forms and back-end.
+            Moreover, it is also available on GitHub pages. Check it out below!
+            Use TuneIn to compose tunes and beats easily&mdash;and save them in the form of simple text!
+            CodeMode is an all HTML site that allows you to create, save, and run HTML pages.
+            Upload upto 5MB of code and edit, save, and run it seamlessly on the go.
+            <span class="text-blue">However, CodeMode works best with CDN links for JS and CSS. You can also type JS and
+                CSS
+                directly inside the HTML code using &lt;script&gt; and &lt;style&gt;,</span>
+            Our newest addition is What-a-Shot!
+            A timing based simulator for batting in cricket&mdash;it has many features including wickets, stats, and
+            different kinds of bats.
+        </div>
+        <br><br>
+        <div class="card">
+            <h2 class="text-center text-green">My projects</h2>
+            <marquee direction="left">
+                <button class="btn btn-green-outline"
+                    onclick="redirect('https://nispar2009.github.io/What-a-Shot')">What-a-Shot!</button>
+                <button class="btn btn-blue-outline"
+                    onclick="redirect('https://nispar2009.github.io/CodeMode')">CodeMode</button>
+                <button class="btn btn-yellow-outline"
+                    onclick="redirect('https://nispar2009.github.io/CanaryChatbot')">Canary Chatbot</button>
+                <button class="btn btn-purple-outline" onclick="redirect('/spectrum_stylr')">SpectrumStylr</button>
+                <button class="btn btn-orange-outline" onclick="redirect('/DesignChamp')">Design Championship</button>
+                <button class="btn btn-green-outline" onclick="redirect('https://github.com/nispar2009/j-pp')">Passion
+                    Project</button>
+                <button class="btn btn-blue-outline"
+                    onclick="redirect('https://github.com/nispar2009/RockPaperScissors')">PVP
+                    rock-paper-scissors</button>
+                <button class="btn btn-grey-outline"
+                    onclick="redirect('https://nispar2009.github.io/QuickCalc2.0')">QuickCalc2.0</button>
+                <button class="btn btn-green-outline"
+                    onclick="redirect('https://nispar2009.github.io/TuneIn')">TuneIn</button>
+                <button class="btn btn-grey-outline" onclick="redirect('https://github.com/nispar2009')">More</button>
+            </marquee>
+            <p>We suggest you to use our products mainly on non-mobile devices to ensure smooth functioning.</p>
+        </div>
     </div>
 </body>
 
